@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <footer>Streamlit 버전을 HTML/JS로 변환한 예시입니다.</footer>
+    <footer></footer>
   </div>
 
   <script>
@@ -194,9 +194,13 @@
       const student = Number(studentInput.value);
       const rank = Number(rankInput.value);
 
-      if (!student || !rank || student <= 0 || rank <= 0) {
-        output.textContent = "";
+      if (!student || student <= 0) { 
         updateTable(0);
+        output.textContent = "";
+        return;
+      }
+      if (!rank || rank <=0) {
+        output.textContent = "";
         return;
       }
 
