@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <footer>5등급 계산기 v1.2.0</footer>
+    <footer>5등급 계산기 v1.2.1</footer>
   </div>
 
   <script>
@@ -219,8 +219,8 @@
 
       output.textContent = grade + "등급";
       if (grade == "error") {
-        output.textContent = "등수는 총 인원수보다 클 수 없습니다";
         output.style.color = red;
+        output.textContent = "등수는 총 인원수보다 클 수 없습니다";
       }
     }
 
