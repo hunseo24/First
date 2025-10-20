@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <footer>5등급 계산기 v1.2.1</footer>
+    <footer>5등급 계산기 v1.2.3</footer>
   </div>
 
   <script>
@@ -217,6 +217,7 @@
       else if (mypercent <= 1) grade = 5;
       else grade = "error";
 
+      output.style.color = "orange";
       output.textContent = grade + "등급";
       if (grade == "error") {
         output.style.color = "red";
